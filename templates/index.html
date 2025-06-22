@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Checker</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Quiz Checker</h1>
+        <form action="/" method="POST" enctype="multipart/form-data">
+            <label for="quiz_files">Upload your quizzes:</label>
+            <input type="file" id="quiz_files" name="quiz_files" multiple required>
+            <button type="submit">Check Quizzes</button>
+        </form>
+    </div>
+</body>
+</html>
